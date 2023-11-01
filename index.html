@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Audio/Video-Transcription Dashboard</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+    <a href="#"><i class="fas fa-file"></i> All Files</a>
+    <a href="#"><i class="fas fa-star"></i> Saved</a>
+    <a href="#"><i class="fas fa-plug"></i> Integrations</a>
+    <a href="#"><i class="fas fa-trash"></i> Trash</a>
+    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+    <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+  </div>
+
+  <div class="main">
+    <div class="search-bar">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search here...">
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-user"></i> 
+    </div>
+
+    <h3>Welcome Shakirat</h3>
+
+    <p>upload your audio and video to convert to text</p>
+
+    <div class="transcription">
+        <h2>Transcription</h2>
+        <form>
+          <div class="upload-button">
+              <label for="file-upload" class="upload-label">Transcribe File</label>
+              <input type="file" id="file-upload" accept="audio/*,video/*">
+            </div>
+        </form>
+      </div>
+
+    <div class="boxes">
+      <div class="box">
+        <h3>Uploaded Files</h3>
+        <p>100</p>
+      </div>
+      <div class="box">
+        <h3>Transcribed Files</h3>
+        <p>50</p>
+      </div>
+      <div class="box">
+        <h3>Saved Files</h3>
+        <p>20</p>
+      </div>
+    </div>
+
+    <div class="recent-files">
+      <h2>Recent Files</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Duration</th>
+            <th>Date Created</th>
+            <th>Last Updated</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Peng Meeting Audio</td>
+            <td>mp3</td>
+            <td>20 min</td>
+            <td>1/5/2023</td>
+            <td>5/5/2023</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tofunmi Idowu SML10025</td>
+            <td>mp4</td>
+            <td>25 min</td>
+            <td>25/4/2023</td>
+            <td>30/4/2023</td>
+            <td></td>
+          </tr>
+          <!-- Add more rows for other recent files -->
+        </tbody>
+      </table>
+    </div>
+
+   
+
+    <div class="speaker-identification">
+      <h2>Speaker Identification</h2>
+      <label for="speaker-identification">Enable Speaker Identification</label>
+      <input type="checkbox" id="speaker-identification">
+    </div>
+
+    <div class="customization">
+      <h2>Customization</h2>
+      <label for="font-size">Font Size:</label>
+      <input type="range" id="font-size" min="12" max="24" step="2">
+      <label for="font-style">Font Style:</label>
+      <select id="font-style">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+      <label for="font-color">Font Color:</label>
+      <input type="color" id="font-color">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
